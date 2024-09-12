@@ -1,1 +1,138 @@
+/* Global styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
+/* Container styles for better padding and alignment */
+html, body, .container {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* Header styles */
+h1 {
+    text-align: center;
+    padding: 10px;
+    font-size: 16pt; /* Ensuring the title is at least 12pt */
+    background-color: #2a3f5f;
+    color: white;
+}
+
+/* Table styling */
+.dash-table-container {
+    padding: 10px;
+}
+
+/* Adjust table for small screens */
+.dash-table {
+    width: 100%;
+    margin: auto;
+}
+
+/* Increase font size for table headers */
+.dash-table .dash-header {
+    font-size: 14pt; /* Larger font size for table headers */
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Increase font size for table cell content */
+.dash-cell-value {
+    font-size: 14pt; /* Larger font size for table cell values */
+    text-align: center;
+}
+
+/* Graph container */
+#candlestick-chart {
+    padding: 20px;
+}
+
+/* General padding for main content */
+html, body {
+    padding: 10px;
+}
+
+/* Media query for iPad resolution (landscape and portrait) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    h1 {
+        font-size: 14pt; /* At least 12pt for iPads */
+    }
+
+    /* Adjust table size and padding for iPad */
+    .dash-table {
+        width: 95%;
+    }
+
+    .dash-table-container {
+        padding: 5px;
+    }
+
+    /* Adjust graph size */
+    #candlestick-chart {
+        padding: 12px;
+    }
+
+    /* Ensure table header and cell font size remains large */
+    .dash-table .dash-header {
+        font-size: 13pt;
+    }
+
+    .dash-cell-value {
+        font-size: 13pt;
+    }
+}
+
+/* Media query for smaller mobile devices */
+@media only screen and (max-width: 767px) {
+    h1 {
+        font-size: 12pt; /* Ensuring the title is at least 12pt for small screens */
+    }
+
+    /* Stack elements vertically */
+    .dash-table-container,
+    #candlestick-chart {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .dash-table {
+        width: 100%;
+    }
+
+    /* Ensure table header and cell font size remains large */
+    .dash-table .dash-header {
+        font-size: 12pt;
+    }
+
+    .dash-cell-value {
+        font-size: 12pt;
+    }
+}
+
+/* For wider screens (desktops) */
+@media only screen and (min-width: 1025px) {
+    h1 {
+        font-size: 20pt; /* Larger title for desktop */
+    }
+
+    .dash-table-container {
+        padding: 20px;
+    }
+
+    #candlestick-chart {
+        padding: 20px;
+    }
+
+    /* Ensure table header and cell font size remains large */
+    .dash-table .dash-header {
+        font-size: 20pt;
+    }
+
+    .dash-cell-value {
+        font-size: 14pt;
+    }
+}
