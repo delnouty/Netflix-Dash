@@ -1,3 +1,5 @@
+**The purpose of this project is to build a dynamic web application using Python's Dash framework to visualize Netflix stock data. It fetches stock data from an external source, cleans and processes the data, and displays it in an interactive dashboard. The dashboard includes a candlestick chart for visualizing stock price trends and a data table for viewing detailed stock information, all with a responsive design to ensure usability across various devices. The project demonstrates the integration of data scraping, data visualization, and responsive web development.**
+
 # Netflix-Dash
 Web-Based Data Dashboard. 
 
